@@ -1,0 +1,19 @@
+{
+  "name": "prisma-date-bug",
+  "license": "(MIT or CC0 1.0)",
+  "type": "module",
+  "scripts": {
+    "test": "rm -rf .not-committed && prisma db push && npx tsx src/index.ts"
+  },
+  "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^6.7.0",
+    "@prisma/client": "^6.7.0",
+    "better-sqlite3": "^11.10.0",
+    "prisma": "^6.7.0",
+    "tsx": "^4.19.4"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.15.18"
+  }
+}
